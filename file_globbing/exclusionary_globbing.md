@@ -1,5 +1,5 @@
 # Challenge Name
-Intro to arguments
+Exclusionary Globbing
 
 ## My solve
 **Flag:** `pwn.college{0MHB-QzDQDeiGyREX5FovcwztSF.QX2IDO0wyM3EzNzEzW}`
