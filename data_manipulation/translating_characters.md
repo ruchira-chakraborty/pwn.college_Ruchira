@@ -1,5 +1,5 @@
 # Challenge Name
-reading files
+translating characters
 
 ## My solve
 **Flag:** `pwn.college{gOjjM2NXZI5RdP7k5uM7luaFdH1.01MxEzNxwyM3EzNzEzW}`
