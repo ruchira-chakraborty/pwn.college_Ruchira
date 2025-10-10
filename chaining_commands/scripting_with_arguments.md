@@ -6,7 +6,8 @@ scripting with arguments
 
 ```bash
 Connected!
-hacker@chaining~scripting-with-arguments:~$ printf '%s\n' '#!/bin/bash' '' 'echo "$2 $1"' > /home/hacker/solve.sh
+hacker@chaining~scripting-with-arguments:~$ echo '#!/bin/bash' > /home/hacker/solve.sh
+hacker@chaining~scripting-with-arguments:~$ echo 'echo "$2 $1"' >> /home/hacker/solve.sh
 hacker@chaining~scripting-with-arguments:~$ chmod +x /home/hacker/solve.sh
 hacker@chaining~scripting-with-arguments:~$ /challenge/run
 Correct! Your script properly reversed the arguments.
