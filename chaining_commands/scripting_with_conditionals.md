@@ -6,7 +6,10 @@ scripting with conditonals
 
 ```bash
 Connected!
-hacker@chaining~scripting-with-conditionals:~$ printf '%s\n' '#!/bin/bash' '' 'if [ "$1" = "pwn" ]' 'then' '  echo "college"' 'fi' > /home/hacker/solve.sh
+hacker@chaining~scripting-with-conditionals:~$ echo '#!/bin/bash' > /home/hacker/solve.sh
+hacker@chaining~scripting-with-conditionals:~$ echo 'if [ "$1" == "pwn" ]; then' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-conditionals:~$ echo '    echo "college"' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-conditionals:~$ echo 'fi' >> /home/hacker/solve.sh
 hacker@chaining~scripting-with-conditionals:~$ chmod +x /home/hacker/solve.sh
 hacker@chaining~scripting-with-conditionals:~$ /challenge/run
 Correct! Your script properly handles all the conditions.
