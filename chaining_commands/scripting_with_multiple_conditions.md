@@ -5,7 +5,17 @@ scripting with multiple conditions
 **Flag:** `pwn.college{s4s2ItFymCmiitOEBrKuPeO3AXK.0FOzMDOxwyM3EzNzEzW}`
 
 ```bash
-hacker@chaining~scripting-with-multiple-conditions:~$ printf '#!/bin/bash [ "$1" == "hack" ]; then\n  echo "the planet"\nelif [ "$1" == "pwn" ]; then\n  echo "college"\nelif [ "$1" == "learn" ]; then\n  echo "linux"\nelse\n  echo "unknown"\nfi\n' > /home/hacker/solve.sh
+Connected!
+hacker@chaining~scripting-with-multiple-conditions:~$ echo '#!/bin/bash' > /home/hacker/solve.sh
+hacker@chaining~scripting-with-multiple-conditions:~$ echo 'if [ "$1" == "hack" ]; then' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-multiple-conditions:~$ echo '    echo "the planet"' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-multiple-conditions:~$ echo 'elif [ "$1" == "pwn" ]; then' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-multiple-conditions:~$ echo '    echo "college"' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-multiple-conditions:~$ echo 'elif [ "$1" == "learn" ]; then' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-multiple-conditions:~$ echo '    echo "linux"' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-multiple-conditions:~$ echo 'else' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-multiple-conditions:~$ echo '    echo "unknown"' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-multiple-conditions:~$ echo 'fi' >> /home/hacker/solve.sh
 hacker@chaining~scripting-with-multiple-conditions:~$ chmod +x /home/hacker/solve.sh
 hacker@chaining~scripting-with-multiple-conditions:~$ /challenge/run
 Correct! Your script properly handles all the conditions with elif.
