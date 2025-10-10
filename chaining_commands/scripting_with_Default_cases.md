@@ -6,7 +6,12 @@ scripting with default cases
 
 ```bash
 Connected!
-hacker@chaining~scripting-with-default-cases:~$ printf '%s\n' '#!/bin/bash' '' 'if [ "$1" = "pwn" ]' 'then' '  echo "college"' 'else' '  echo "nope"' 'fi' > /home/hacker/solve.sh
+hacker@chaining~scripting-with-default-cases:~$ echo '#!/bin/bash' > /home/hacker/solve.sh
+hacker@chaining~scripting-with-default-cases:~$ echo 'if [ "$1" == "pwn" ]; then' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-default-cases:~$ echo '    echo "college"' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-default-cases:~$ echo 'else' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-default-cases:~$ echo '    echo "nope"' >> /home/hacker/solve.sh
+hacker@chaining~scripting-with-default-cases:~$ echo 'fi' >> /home/hacker/solve.sh
 hacker@chaining~scripting-with-default-cases:~$ chmod +x /home/hacker/solve.sh
 hacker@chaining~scripting-with-default-cases:~$ /challenge/run
 Correct! Your script properly handles the if/else conditions.
